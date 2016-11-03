@@ -15,6 +15,8 @@ and open the template in the editor.
         
         echo StaticClass::getName();
         echo StaticClass::showNow();
+        StaticClass::setVar(10);
+        StaticClass::getVar;
         ?>
     </body>
 </html>

@@ -7,6 +7,8 @@
  */
 
 class StaticClass {
+    private static $var;
+    
     public static function getName () {
         return 'Mein Name ist '. __CLASS__;
     }
@@ -15,6 +17,12 @@ class StaticClass {
     }
     private static function now () {
         return date('d.m.y h:i:s');
+    }
+    public static function setVar ($val) {
+        self::$var = $val;
+    }
+    private static function getVar () {
+        return self::$var;
     }
     
 }
